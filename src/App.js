@@ -20,9 +20,12 @@ import './App.css';
 const App = () => {
 
 
-  const [posts, setPosts] = useState(initialState)
+ 
+  const [posts, setPosts] = useState([{userId : 'useriiid1' , id: 'iiid1'  , title: 'tiiiitle1' ,  body: 'bodyyyy1'} , 
+  {userId : 'useriiid2' , id: 'iiid2'  , title: 'tiiiitle2' ,  body: 'bodyyyy2'} ])
   
-  
+
+
 // ex. const name = 'jack' // const age = 30
 // const todos = [{todo: "wake up", id: 1}, {todo: "breakfast", id: 2}, {todo: "study", id: 3}]
 
@@ -31,6 +34,7 @@ const App = () => {
      
     <div className="App">
      <h1>Blog App</h1>
+     
     
      {/* here in return just jsx , to call a component: <List/> */}
    
