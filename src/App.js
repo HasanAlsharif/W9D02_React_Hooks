@@ -3,9 +3,9 @@
 // 3.open on chrome (localhost:3000)
 // Best practice name the cpmponnents pascal case (ex.App)
 
-
 import React, { useState } from "react";
 import './App.css';
+
 
 
 // components
@@ -19,6 +19,10 @@ import './App.css';
 
 const App = () => {
 
+
+  const [posts, setPosts] = useState(initialState)
+  
+  
 // ex. const name = 'jack' // const age = 30
 // const todos = [{todo: "wake up", id: 1}, {todo: "breakfast", id: 2}, {todo: "study", id: 3}]
 
