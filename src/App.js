@@ -24,6 +24,10 @@ const App = () => {
   const [posts, setPosts] = useState([{userId : 'useriiid1' , id: 'iiid1'  , title: 'tiiiitle1' ,  body: 'bodyyyy1'} , 
   {userId : 'useriiid2' , id: 'iiid2'  , title: 'tiiiitle2' ,  body: 'bodyyyy2'} ])
   
+  const [userId, setUserId] = useState()
+  const [id, setId] = useState()
+  const [title, setTitle] = useState()
+  const [body, setBody] = useState()
 
 
 // ex. const name = 'jack' // const age = 30
@@ -41,8 +45,12 @@ const App = () => {
 
     })}
     
-     
-   
+    <button>button</button>
+    <input type="text" placeholder="1"/>
+    <input type="text" placeholder="2"/>
+    <input type="text" placeholder="3"/>
+    <input type="text" placeholder="4"/>
+    
     </div>
     </>
   );
