@@ -28,15 +28,20 @@ const App = () => {
 
 // ex. const name = 'jack' // const age = 30
 // const todos = [{todo: "wake up", id: 1}, {todo: "breakfast", id: 2}, {todo: "study", id: 3}]
-
+  
   return (
     <>
      
     <div className="App">
      <h1>Blog App</h1>
-     
     
-     {/* here in return just jsx , to call a component: <List/> */}
+    {posts.map((elem,i) => {
+
+      return <> <p> {elem.title} </p>  <p> {elem.body} </p> </>
+
+    })}
+    
+     
    
     </div>
     </>
